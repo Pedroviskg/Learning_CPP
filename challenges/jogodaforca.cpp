@@ -136,8 +136,8 @@ int main()
     while(cont == 0)
     {
 	std::cout << "Bem vindo ao Jogo da Forca!" << std::endl;
-	std::cout << "REGRAS E AVISOS: " << std::endl << "* Você tem cinco chances de errar;" << std::endl << "* Caracteres especiais não são levados em consideração (cedilha, acento agudo, etc)";
-	std::cout << "* Nunca digite a palavra por inteiro, caso você a saiba. Digite letra por letra. " << std::endl << "Bom jogo!" << std::endl;
+	std::cout << "REGRAS E AVISOS: " << std::endl << "* Você tem cinco chances de errar;" << std::endl << "* Caracteres especiais nao sao levados em consideracao (cedilha, acento agudo, etc)";
+	std::cout << "* Nunca digite a palavra por inteiro, caso voce a saiba. Digite letra por letra. " << std::endl << "Bom jogo!" << std::endl;
 
 	std::string word = getword();
 	bool ver = guesstheword(word);
