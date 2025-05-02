@@ -13,9 +13,9 @@ std::vector<std::string> wordlist {
     "sol", "lua", "estrela", "floresta", "neblina",
     "rosto", "sorriso", "olhar", "palavra", "abraço",
     "esperança", "sonho", "verdade", "verso", "riso",
-    "coração", "segredo", "tempo", "futuro", "passado",
+    "coracao", "segredo", "tempo", "futuro", "passado",
     "presente", "encanto", "misterio", "viola", "pintura",
-    "cores", "cheiro", "comida", "memória", "jardim"
+    "cores", "cheiro", "comida", "memoria", "jardim"
 };
 }
 
@@ -136,7 +136,8 @@ int main()
     while(cont == 0)
     {
 	std::cout << "Bem vindo ao Jogo da Forca!" << std::endl;
-	std::cout << "Ganha se você acertar a palavra em até 5 tentativas. Bom jogo!" << std::endl;
+	std::cout << "REGRAS E AVISOS: " << std::endl << "* Você tem cinco chances de errar;" << std::endl << "* Caracteres especiais não são levados em consideração (cedilha, acento agudo, etc)";
+	std::cout << "* Nunca digite a palavra por inteiro, caso você a saiba. Digite letra por letra. " << std::endl << "Bom jogo!" << std::endl;
 
 	std::string word = getword();
 	bool ver = guesstheword(word);
